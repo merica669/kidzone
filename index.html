@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to KidZone.ai!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f9ff;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #6366f1, #f59e0b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .card {
+            background: white;
+            border-radius: 1.5rem;
+            padding: 2rem;
+            box-shadow: 0 10px 25px -5px rgb(0 0 0 / 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 30px -10px rgb(0 0 0 / 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="min-h-screen bg-sky-50">
+
+        <!-- Header -->
+        <header class="bg-white/80 backdrop-blur-lg fixed top-0 left-0 right-0 z-10">
+            <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+                <div class="text-2xl font-extrabold flex items-center gap-2">
+                    <span class="gradient-text">🚀 KidZone.ai</span>
+                </div>
+                <a href="kidzone.html" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-5 rounded-full shadow-md transition-transform transform hover:scale-105">
+                    Launch Playground
+                </a>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero-gradient text-white pt-32 pb-20">
+            <div class="container mx-auto px-6 text-center">
+                
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight">Unlock Your Child's Imagination, Safely</h1>
+                <p class="text-lg md:text-xl text-indigo-200 mb-8 max-w-3xl mx-auto">Welcome to KidZone.ai, the AI-powered creative playground where kids can create, learn, and play in a world with safety guardrails set by you.</p>
+                <a href="kidzone.html" class="bg-white text-indigo-600 font-bold py-4 px-10 rounded-full shadow-xl transition-transform transform hover:scale-105 text-lg">
+                    Start Creating Now ✨
+                </a>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900">A World of Creativity Awaits</h2>
+                    <p class="text-lg text-slate-600 mt-4 max-w-2xl mx-auto">From magical stories to amazing pictures, KidZone.ai is a launchpad for your child's best ideas.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <!-- For Parents -->
+                    <div class="card bg-sky-50">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="text-4xl">🛡️</div>
+                            <h3 class="text-2xl font-bold text-slate-800">Peace of Mind for Parents</h3>
+                        </div>
+                        <p class="text-slate-600 mb-4">You are in complete control. Our "Guardian AI" works behind the scenes to ensure every creation is safe, positive, and age-appropriate based on the rules you set.</p>
+                        <ul class="space-y-2">
+                            <li class="flex items-center gap-2"><span class="text-green-500 font-bold">✓</span> Set custom safety guardrails</li>
+                            <li class="flex items-center gap-2"><span class="text-green-500 font-bold">✓</span> Monitor activity from your dashboard</li>
+                            <li class="flex items-center gap-2"><span class="text-green-500 font-bold">✓</span> Promote positive and educational content</li>
+                        </ul>
+                    </div>
+                    <!-- For Kids -->
+                    <div class="card bg-amber-50">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="text-4xl">🎨</div>
+                            <h3 class="text-2xl font-bold text-slate-800">Endless Fun for Kids</h3>
+                        </div>
+                        <p class="text-slate-600 mb-4">If you can dream it, you can create it! The AI is your creative buddy, ready to help you bring your amazing ideas to life.</p>
+                        <ul class="space-y-2">
+                            <li class="flex items-center gap-2"><span class="text-amber-500 font-bold">✓</span> Write incredible stories & poems</li>
+                            <li class="flex items-center gap-2"><span class="text-amber-500 font-bold">✓</span> Draw magical pictures from your words</li>
+                            <li class="flex items-center gap-2"><span class="text-amber-500 font-bold">✓</span> Learn fun facts and take silly quizzes</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- How It Works Section -->
+        <section class="py-20">
+             <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900">Ready in Three Easy Steps</h2>
+                </div>
+                 <div class="grid md:grid-cols-3 gap-8 text-center">
+                     <div class="p-4">
+                         <div class="text-5xl mb-4">1️⃣</div>
+                         <h3 class="text-xl font-bold mb-2">Parent Creates Profile</h3>
+                         <p class="text-slate-600">Quickly set up your child's profile and choose the safety settings that are right for your family.</p>
+                     </div>
+                      <div class="p-4">
+                         <div class="text-5xl mb-4">2️⃣</div>
+                         <h3 class="text-xl font-bold mb-2">Kid Starts Creating</h3>
+                         <p class="text-slate-600">Your child enters their ideas and watches the AI bring them to life as stories, pictures, and more!</p>
+                     </div>
+                      <div class="p-4">
+                         <div class="text-5xl mb-4">3️⃣</div>
+                         <h3 class="text-xl font-bold mb-2">Imagination Comes Alive</h3>
+                         <p class="text-slate-600">Enjoy a safe, fun, and creative experience together. See what amazing things your child will dream up next!</p>
+                     </div>
+                 </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="bg-white py-20">
+             <div class="container mx-auto px-6 text-center">
+                  <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900">Ready to Explore?</h2>
+                  <p class="text-lg text-slate-600 mt-4 mb-8 max-w-2xl mx-auto">Launch the playground and start your family's creative adventure today. It's safe, fun, and free to get started.</p>
+                   <a href="kidzone.html" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 px-10 rounded-full shadow-xl transition-transform transform hover:scale-105 text-lg">
+                    Launch KidZone.ai
+                </a>
+             </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="py-6 text-center">
+            <p class="text-slate-500">&copy; 2025 KidZone.ai - A Safe Place for Big Imaginations.</p>
+        </footer>
+    </div>
+</body>
+</html>
+
