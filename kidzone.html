@@ -99,7 +99,7 @@
     <div id="parentOnboarding" class="page active">
         <div class="onboarding-container">
             <div class="onboarding-card">
-                <div class="logo"><h1>🚀 KidKit.ai</h1><p>Your Child's Safe AI Creative Playground</p></div>
+                <div class="logo"><h1>🚀 KidZone.ai</h1><p>Your Child's Safe AI Creative Playground</p></div>
                 <form id="onboardingForm">
                     <div class="form-group"><label class="form-label" for="childName">Child's First Name <span style="color:var(--danger)">*</span></label><input type="text" id="childName" class="form-input" placeholder="e.g., Emma" required maxlength="20"></div>
                     <div class="form-group"><label class="form-label" for="childAge">Age Group <span style="color:var(--danger)">*</span></label><select id="childAge" class="form-select" required><option value="">Select age group</option><option value="4-6">4-6 years (Pre-school)</option><option value="7-9">7-9 years (Early Elementary)</option><option value="10-12">10-12 years (Late Elementary)</option></select></div>
@@ -145,10 +145,10 @@
         let stats = { totalCreations: 0, safetyBlocks: 0, creativityCoins: 0, sessionStart: Date.now(), activityLog: [] };
         
         document.addEventListener('DOMContentLoaded', () => {
-            const savedProfile = localStorage.getItem('kidkitProfile');
+            const savedProfile = localStorage.getItem('kidzoneProfile');
             if (savedProfile) {
                 childProfile = JSON.parse(savedProfile);
-                const savedStats = localStorage.getItem('kidkitStats');
+                const savedStats = localStorage.getItem('kidzoneStats');
                 if (savedStats) stats = JSON.parse(savedStats);
                 showChildSpace();
             }
@@ -199,8 +199,8 @@
             childProfile = { name, age, interests: document.getElementById('childInterests').value.trim(), guardrails };
             stats = { totalCreations: 0, safetyBlocks: 0, creativityCoins: 0, sessionStart: Date.now(), activityLog: [] };
             
-            localStorage.setItem('kidkitProfile', JSON.stringify(childProfile));
-            localStorage.setItem('kidkitStats', JSON.stringify(stats));
+            localStorage.setItem('kidzoneProfile', JSON.stringify(childProfile));
+            localStorage.setItem('kidzoneStats', JSON.stringify(stats));
             
             showChildSpace();
             showToast(`Welcome, ${name}! Let's create something amazing! 🎉`, 'success');
@@ -251,7 +251,7 @@
             stats.totalCreations++;
             stats.creativityCoins += 10;
             stats.activityLog.push({ type, prompt, timestamp: Date.now() });
-            localStorage.setItem('kidkitStats', JSON.stringify(stats));
+            localStorage.setItem('kidzoneStats', JSON.stringify(stats));
             updateStats();
         }
 
@@ -333,7 +333,7 @@
             if (confirm('Are you sure you want to delete this creation?')) {
                 btn.closest('.webpage-block').remove();
                 stats.totalCreations = Math.max(0, stats.totalCreations - 1);
-                localStorage.setItem('kidkitStats', JSON.stringify(stats));
+                localStorage.setItem('kidzoneStats', JSON.stringify(stats));
                 if (document.querySelectorAll('.webpage-block').length === 0) {
                     document.getElementById('emptyState').style.display = 'block';
                 }
@@ -348,6 +348,3 @@
     </script>
 </body>
 </html>
-
-
-
